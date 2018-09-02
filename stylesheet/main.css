@@ -1,0 +1,187 @@
+body {
+  background-image: url("../stylesheet/images/images.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  display:flex;
+  /* background-image: url("../stylesheet/images/background_image.jpg"); */
+  /* background-postion:center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header .logo {
+  padding : 10px;
+  flex:1;
+}
+header .logo img {
+  border-radius: 50%;
+}
+header .name {
+  text-align: right;
+  flex:1;
+}
+header .name h1 {
+  position: relative;
+  top:7.5%;
+  right:20%;
+  /* font-family: sans-serif;
+  font-size:24px */
+}
+header .name p {
+  position: relative;
+  top:10%;
+  right:30%;
+  font-family: 'Playfair Display', serif;
+  font-size:24px
+}
+section .work {
+  /* display:flex; */
+  text-align:center;
+  flex:1;
+  font-size:4vw;
+  font-family: 'Playfair Display', serif;
+  /* font-size:30px; */
+  font-weight: bold;
+}
+.about> img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  display:grid;
+  grid-template-columns: 50% 50%;
+  align-content: space-around;
+  /* background-image: url("../stylesheet/images/olivia-maia-207713-unsplash.jpg"); */
+  /* grid-column-gap:50px; */
+  /* border:10px solid black; */
+  /* width:25px; */
+}
+footer .contact{
+  margin:auto;
+}
+footer .contact>p {
+  font-family: 'Playfair Display', serif;
+  font-size:4vw;
+  font-weight: bold;
+}
+footer .links{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  /* background-color: #2196F3; */
+  grid-gap:10px;
+  /* padding: 10px; */
+  /* flex:1; */
+}
+footer .links img {
+  width:100px;
+  margin-left:50px;
+}
+.row p
+{
+  font-family: 'Playfair Display', serif;
+  font-size:27px;
+}
+/* footer .contact {
+  flex:1;
+}
+footer .links {
+  flex:1;
+} */
+
+@media screen and (max-width:480px) {
+
+  header {
+    display: block;
+  }
+  header .logo img {
+    display: block;
+    align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .name h1,h3{
+    text-align:center;
+  }
+  section {
+    display:block;
+    text-align: center;
+  }
+  section .work {
+    text-align:center;
+  }
+  footer {
+    display:block;
+  }
+  footer .contact {
+    text-align:center;
+  }
+  footer .align a {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* for project images */
+
+* {
+  box-sizing: border-box;
+}
+.column1,.column2,.column3 {
+  float: left;
+  width: 33.33%;
+  height: 50%;
+  padding: 35px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear:both;
+  display: table;
+}
+@media screen and (max-width: 960px) {
+  header .name h1 {
+    position: relative;
+    top:7.5%;
+    right:20%;
+    /* font-family: sans-serif;
+    font-size:24px */
+  }
+  header .name p {
+    position: relative;
+    top:10%;
+    right:30%;
+    font-family: 'Playfair Display', serif;
+    font-size:24px
+  }
+}
+@media screen and (max-width: 768px) {
+  .column1,.column2 {
+    width: 49.33%;
+    float: left;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto
+  }
+  .column3 {
+    width:50%;
+    float:left;
+    margin:auto;
+  }
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  header .name h1 {
+    position: relative;
+    top:7.5%;
+    right:2%;
+    /* font-family: sans-serif;
+    font-size:24px */
+  }
+  .column1,.column2,.column3 {
+    width: 100%;
+}
+}
